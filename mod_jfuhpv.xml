@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="1.0" method="upgrade">
+	<name>jfuhpv</name>
+	<creationDate>November 27, 2016</creationDate>
+	<author>Ivan Senishin</author>
+	<authorUrl>https://github.com/IvanSenishin/mod_jfuhpv</authorUrl>
+	<copyright>Copyright (C) 2016 Senishin Ivan. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<version>1.0</version>
+	<description>MOD_JFUHPV_DESC</description>
+	<files>
+		<filename>mod_jfuhpv.xml</filename>
+		<filename module="mod_jfuhpv">mod_jfuhpv.php</filename>
+		<filename>index.html</filename>
+		<folder>tmpl</folder>
+	</files>
+<!--	<languages>
+		<language tag="en-GB">language/en-GB/en-GB.mod_jfuhpv.ini</language>
+		<language tag="ru-RU">language/ru-RU/ru-RU.mod_jfuhpv.ini</language>
+	</languages>-->
+
+	<media destination="jfuhpv" folder="media">
+		<folder>js</folder>
+		<folder>css</folder>
+		<folder>img</folder>
+		<file>index.html</file>
+	</media>
+    <!--
+        uhe 	= 2,
+        lng 	= 'ru',
+        has 	= 0,
+        imgs 	= 1,
+        bg 	    = 1,
+        hwidth 	= 1200,
+        bgs 	= ['1','2','3'],
+        fonts 	= ['17','21','25'];
+    -->
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field
+						name="fontSizeList"
+						type="text"
+						default="'17','21','25'"
+						label="Список размеров шрифта"/>
+			</fieldset>
+		</fields>
+	</config>
+
+</extension>
